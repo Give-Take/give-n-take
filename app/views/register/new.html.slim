@@ -1,4 +1,25 @@
-- if @form.errors.any?
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact Us | Relli</title>
+  <meta charset="utf-8"/>
+  <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <ul>
+        <li><a href="/#">Home</a></li>
+        <li><a href="/shop">Shop</a></li>
+        <li>Register</a></li>
+        <li><a href="/contact_us">Contact Us</a></li>
+      </ul>
+    </nav>
+      <div class="text">
+    <h1>Relli.</h1>
+    <p>A marketplace for stylish, thrifted and secondhand goods.</p>
+    </div>
+    - if @form.errors.any?
   ul
   - @form.errors.full_messages.each do |msg|
     li = msg
@@ -14,3 +35,5 @@
 
   div
     = f.submit "Register"
+  </div>
+</body>
