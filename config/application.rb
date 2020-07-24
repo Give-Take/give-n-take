@@ -12,7 +12,6 @@ module GiveNTake
 		config.load_defaults 6.0
 		config.autoloader = :classic
     config.autoload_paths << "#{config.root}/lib/validators"
-		Rails.autoloaders.main.ignore("#{Rails.root}/app/overrides")
 
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration can go into files in config/initializers
